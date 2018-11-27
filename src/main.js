@@ -13,6 +13,7 @@ import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
 import Vuex from "vuex";
 
+axios.defaults.withCredentials = true;
 Vue.config.productionTip = false;
 Vue.filter("currency", currencyFilter);
 Vue.component("Loading", Loading);
