@@ -15,6 +15,9 @@
 		    	<div @click="hideMenu()">
 		    		<router-link class="nav-item nav-link mr-2" to="/faq">FAQ</router-link>
 		    	</div>
+						<div @click="hideMenu()">
+		    		<router-link class="nav-item nav-link mr-2" to="/allitem">購物去</router-link>
+		    	</div>
 		    </div>
 		  </div>
 		</nav>
@@ -60,8 +63,7 @@
 		</div>
 
 		<!-- shop -->
-		<router-view></router-view>
-
+<router-view></router-view>
 		<!-- footer -->
 		<footer class="bg-light py-4 text-center">
 			<div class="container">
@@ -131,7 +133,7 @@ body{
   font-family: 'Knewave', cursive;
   font-size: 36px;
   padding: 5px 10px;
-  background: -webkit-linear-gradient(45deg, #F9C1B1, #D76D77, #D19592);
+  background: -webkit-linear-gradient(45deg, #C7E9FB,  #E61D8C);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

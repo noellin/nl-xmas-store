@@ -14,15 +14,15 @@
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="#" :class="{'active': selected=='魯蛇'}"
-				    @click.prevent="selected='魯蛇'; getProducts('all')">魯蛇特選</a>
+				    @click.prevent="selected='魯蛇'; getProducts('all')">魯蛇專區</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="#" :class="{'active': selected=='情人'}"
-				    @click.prevent="selected='情人'; getProducts('all')">情人特選</a>
+				    @click.prevent="selected='情人'; getProducts('all')">情人專區</a>
 				  </li>
 				  <li class="nav-item">
 				    <a class="nav-link" href="#" :class="{'active': selected=='團聚'}" 
-				    @click.prevent="selected='團聚'; getProducts('all')">團聚特選</a>
+				    @click.prevent="selected='團聚'; getProducts('all')">團聚專區</a>
 				  </li>
 				</ul>
 				<!-- products -->

@@ -12,38 +12,37 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
-      path: "/",
-      name: "Home",
+      path: '/',
+      name: 'Home',
       component: Home,
       children: [
-        {
-          path: "",
-          name: "Shop",
-          component: Shop,
-          children: [
-            {
-              path: "",
-              name: "AllItem",
-              component: AllItem
-            },
-            {
-              path: "product/:itemId",
-              name: "SingleItem",
-              component: SingleItem
-            }
-          ]
-        },
-        {
-          path: "faq",
-          name: "Faq",
-          component: Faq
-        },
-        {
-          path: "createOrder",
-          name: "CreateOrder",
-          component: CreateOrder
-        }
+      {
+      	path: '',
+      	name: 'Shop',
+      	component: Shop,
+      },
+      	{
+      		path: '/allitem',
+      		name: 'AllItem',
+      		component: AllItem
+      	},
+      	{
+      		path: 'product/:itemId',
+      		name: 'SingleItem',
+      		component: SingleItem
+      	},
+
+      {
+      	path: 'faq',
+      	name: 'Faq',
+      	component: Faq
+      },
+      {
+      	path: 'createOrder',
+      	name: 'CreateOrder',
+      	component: CreateOrder
+      },
       ]
-    }
+    },
   ]
-});
+})

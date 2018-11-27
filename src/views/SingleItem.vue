@@ -5,7 +5,7 @@
 		<nav aria-label="breadcrumb">
 		  <ol class="breadcrumb">
 		  	<div class="container d-flex">
-		  		<li class="breadcrumb-item"><router-link to="/">Weird Store</router-link></li>
+		  		<li class="breadcrumb-item"><router-link to="/">NL XMAS Store</router-link></li>
 			    <li class="breadcrumb-item">{{product.category}}系列</li>
 			    <li class="breadcrumb-item active" aria-current="page">{{product.title}}</li>
 		  	</div>
@@ -33,6 +33,7 @@
 	        	<div class="u-pointer"><i class="fas fa-pencil-ruler"></i>尺寸</div>
 	        	<div class="u-pointer"><i class="far fa-star"></i>收藏</div>
 	        </div>
+
 	        <div class="d-flex my-4">
 	        	<select name="" class="form-control mr-2" v-model="product.num">
 							<option value="0" selected disabled>請選擇商品數量</option>
@@ -41,20 +42,23 @@
 						<button class="btn btn-primary u-pointer" @click="addtoCart(product.id,product.num)">
 							<i class="fas fa-plus-circle"></i>
 							加入購物車
-						</button>
+						</button>		
 	        </div>
+
 				</div>
 			</div>
 			<!-- description -->
 			<div class="row justify-content-center mb-4">
 				<div class="col-10">
 					<!-- text -->
-					<div class="u-desc text-center">
-						<h4 class="">商品描述</h4>
-						 <p v-if="product.description">{{ product.description }}</p>
-						  <p v-if="product.content">{{product.content}}</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis repellendus, facilis, culpa itaque atque excepturi quia, explicabo officiis odio enim provident ipsam id dolor eligendi similique minima dicta nihil voluptate.</p>
-					</div>
+						<hr>
+				<div class="u-desc text-lift">
+					<h4 class="">商品描述</h4>
+					<h5 v-if="product.description">{{ product.description }}</h5>
+					<h5 v-if="product.content">{{product.content}}</h5>
+					<br>
+					<p>本店產品皆由聖誕老公公精心挑選，售出概不退回。</p>
+				</div>	
 					<!-- image -->
 					<div class="text-center">
 						<router-link class="btn btn-info text-white" to="/faq">購物指南</router-link>

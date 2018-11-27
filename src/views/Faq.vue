@@ -61,7 +61,7 @@
 					    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
 					      <div class="card-body">
 					      	I gave you everything. You gave me anything<br>
-									偷偷告訴你，輸入happynewyear會打折<br>
+									偷偷告訴你，輸入happynewyears會打折<br>
 									<router-link class="btn btn-info text-white mt-2" to="/">選購去</router-link>
 					      </div>
 					    </div>
