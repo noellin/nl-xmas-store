@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
@@ -14,7 +15,9 @@ export default new Vuex.Store({
   },
   actions: {
     getCart(context) {
-      const api = `${process.env.VUE_APP_APIPATH}/api/${process.env.VUE_APP_CUSTOMPATH}/cart`;
+      const api = `${process.env.VUE_APP_APIPATH}/api/${
+        process.env.VUE_APP_CUSTOMPATH
+      }/cart`;
       context.commit("LOADING", true);
       axios.get(api).then(response => {
         context.commit("GETCART", response.data.data);
@@ -26,7 +29,7 @@ export default new Vuex.Store({
         process.env.VUE_APP_CUSTOMPATH
       }/cart/${id}`;
       context.commit("LOADING", true);
-      axios.delete(url).then(response => {
+      axios.delete(url).then(_response => {
         context.dispatch("getCart");
         context.commit("LOADING", false);
       });
