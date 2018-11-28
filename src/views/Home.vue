@@ -105,6 +105,8 @@ export default {
   },
 	created() {
 		this.getCart();
+		console.log(process.env.VUE_APP_APIPATH)
+		console.log(process.env.VUE_APP_CUSTOMPATH)
 	},
 }
 </script>
